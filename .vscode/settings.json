@@ -1,0 +1,6 @@
+{
+    "DockerRun.DisableDockerrc": true,
+    "python.analysis.extraPaths": [
+        "./venv/Lib/site-packages"
+    ]
+}
