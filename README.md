@@ -95,8 +95,28 @@ To set up CI/CD pipeline in heroku we need 3 information
 
 BUILD DOCKER IMAGE
 ```
-docker build -t <image_name>:<tagname>
+docker build -t <image_name>:<tagname> .
 ```
 
 > Note: Image name for docker must be lowercase
 
+To list images
+```
+docker images
+```
+
+Run docker images
+```
+docker run -p 5000:5000 -e PORT=5000 <IMAGE ID>
+```
+>NOTE: IMAGE ID can be get by running 'docker images' command
+
+To Check running container in docker
+```
+docker ps
+```
+
+Tp stop docker container
+```
+docker stop <container_id>
+```
