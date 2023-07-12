@@ -120,3 +120,25 @@ Tp stop docker container
 ```
 docker stop <container_id>
 ```
+
+
+Understanding Dockerfile
+
+```
+FROM python:3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE $PORT
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+```
+> First we have taken Base Image which is based on ubunto system i.e. FROM Pthon:3.7
+> We have copied all the file
+> Then we set working directory to this app
+> Then we ate running our app
+> $PORT means it is environment variable which will be provided by server side.
+> .dockerignore means we want to ignore that file in .dockerignore file.
+
+```
+python setup.py install
+```
