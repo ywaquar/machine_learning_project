@@ -142,3 +142,8 @@ CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
 ```
 python setup.py install
 ```
+
+Install ipykernel
+```
+pip install ipykernel
+```
