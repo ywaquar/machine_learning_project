@@ -1,8 +1,8 @@
 import os
 from datetime import datetime
 
-# ROOT_DIR = os.getcwd()  #To get current working directory
-ROOT_DIR = os.path.dirname(os.getcwd())
+ROOT_DIR = os.getcwd()  #To get current working directory
+# ROOT_DIR = os.path.dirname(os.getcwd())
 
 CONFIG_DIR = "config"
 CONFIG_FILE_NAME = "config.yaml"
@@ -25,8 +25,3 @@ DATA_INGESTION_TGZ_DOWNLOAD_DIR_KEY = "tgz_download_dir"
 DATA_INGESTION_INGESTED_DIR_NAME_KEY = "ingested_dir"
 DATA_INGESTION_TRAIN_DIR_KEY = "ingested_train_dir"
 DATA_INGESTION_TEST_DIR_KEY = "ingested_test_dir"
-
-# Data Validation related variable
-data_validation_config:
-  schema_file_name: schema.yaml
-DATA_VALIDATION_SCHEMA_FILE_NAME = "schema_file_name"

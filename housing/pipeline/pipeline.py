@@ -8,8 +8,7 @@ from housing.component.data_ingestion import DataIngestion
 import os,sys
 
 
-class Pipeline:
-    
+class Pipeline:    
     def __init__(self,config: Configuration=Configuration()) -> None:
         try:
             self.config=config
@@ -45,6 +44,6 @@ class Pipeline:
         try:
             #data ingestion
             data_ingestion_artifact = self.start_data_ingestion()
-
+            return data_ingestion_artifact
         except Exception as e:
             raise HousingException(e,sys) from e
